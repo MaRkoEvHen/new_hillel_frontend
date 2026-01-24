@@ -77,29 +77,73 @@ button.menu-btn{
 }
 main.main{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-main.left-main{
-    padding: 68px 43px 0 0;
+div.left-main{
     display: flex;
     flex-direction: column;
-
+    align-items: start;
+    padding: 68px 40px 85px;
 }
-span{
+.left-main h4{
     color: #3D3D3D;
-    font-family: "Cera Pro Regular";
+    font-family: "Cera Pro Medium" ;
     font-size: 14px;
-    font-style: normal;
+    line-height: 16px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    margin-bottom: 7px;
 }
-h1{
-    font-family: "Cera Pro";
+.left-main h1{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
     font-size: 70px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 70px;
     text-transform: uppercase;
+
+}
+.left-main span{
+    color: #46A358;
+    font-family: "Cera Pro Bold";
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.left-main p{
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 24px;
+}
+button.main_btn{
+    margin-top: 44px;
+    border-radius: 6px;
+    background: #46A358;
+    width: 140px;
+    height: 40px;
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+div.right-main {
+    position: relative; 
+    display: inline-block; 
+    align-self: flex-end;
+    line-height: 0;
+}
+
+.first_photo {
+    display: block;
+    width: 518px;
+    height: auto;
+}
+
+.second_photo {
+    position: absolute; 
+    width: 135px;          
+    bottom: 30px;      
+    left: 60px;         
+    z-index: 10;        
 }
