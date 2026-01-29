@@ -154,8 +154,6 @@ div.right-main {
 .HomeWork5{
     margin-top: 46px;
     display: flex;
-    flex-direction: row;
-    gap: 50px;
 }
 .main-categoties{
     display: flex;
@@ -164,8 +162,11 @@ div.right-main {
     justify-content: space-between;
 }
 .categoties_list{
-    width: 310px;
-    height: 774px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 .categories h4{
     margin: 14px 0 0 18px;
@@ -195,108 +196,139 @@ div.right-main {
 div.nav_bar_foto{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-grow: 1;
+    padding-left: 50px;
 }
 div.up_menu{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
 }
 menu.up_left_menu{
     display: flex;
     gap: 40px;
 }
 li.bar_items{
-    border-bottom: 3px solid transparent;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
     line-height: 16px;
-    padding-bottom: 7px; 
+    padding-bottom: 7px ;
+    border-bottom: 2px solid transparent;
+
 }
 li.bar_items.active{
     color: #46A358;
-    font-family: "Cera Pro Bold";
+    font-family: "Cera Pro Medium";
     font-size: 15px;
     line-height: 16px;
     border-bottom: 2px solid #46A358;
 }
 div.up_right_menu{
     display: flex;
-    gap: 8px;
-    align-items: center;
-    padding-bottom: 7px;
 }
 .up_right_menu p{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
     line-height: 16px;
+    margin-right: 8px;
 }
 .up_right_menu button{
+
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
     line-height: 16px;
-    background: none; 
-} 
+    background: none;
+    
+}
 .up_right_menu img{
     display: flex;
     width: 16px;
-    height: 16px;
+    height: auto;
     justify-content: center;
     align-items: center;
+    margin-left: 2px;
 }
-div.foto-content{
-    margin: 62px 0 70px 0 ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 40px 30px;
-    align-content: space-between;
-}
-div.foto, div.foto_4{
+div.foto_content{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
+    margin-top: 62px;
+    width: 100%;
 }
-.foto img{
-    height: 250px;
-    width: auto;
-    object-fit: cover;
+div.row_1,div.row_2{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 41px;
+}
+div.row_3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+div.row_1 h4,div.row_2 h4,div.row_3 h4{
+    margin-top: 12px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 16px;
+    line-height: 16px;
+}
+div.row_1 span,div.row_2 span,div.row_3 span{
+    color: #46A358;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    line-height: 16px;
 
 }
-.foto h4 {
-    margin-top: 31px;
+.foto{
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.foto_4{
+    width: 224px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+menu.menu_slide{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 90px;
+    gap: 10px;
+
+}
+.menu_slide .slide{
+    padding: 10px 13px 9px 14px;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
-    font-size: 16px;
-    line-height: 16px;
-}
-.foto span{
-    margin-top: 6px;
-    color: #46A358;
-    font-family: "Cera Pro Bold";
     font-size: 18px;
     line-height: 16px;
+    display: flex;
 }
-.foto_4 img{
-    width: auto;
-    height: 286px;
-    object-fit: cover;
-}
-.foto_4 h4 {
-    margin-top: 31px;
-    color: #3D3D3D;
-    font-family: "Cera Pro Regular";
-    font-size: 16px;
-    line-height: 16px;
-}
-.foto_4 span{
-    margin-top: 6px;
-    color: #46A358;
-    font-family: "Cera Pro Bold";
+.menu_slide .slide.active{
+    border-radius: 4px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro";
     font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 16px;
+}
+.menu_slide .slide.img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
