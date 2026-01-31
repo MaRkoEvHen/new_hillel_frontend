@@ -154,29 +154,31 @@ div.right-main {
 .HomeWork5{
     margin-top: 46px;
     display: flex;
+    gap: 50px;
 }
 .main-categoties{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    background: #FBFBFB;
 }
 .categoties_list{
+    padding: 14px 18px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-grow: 1;
+
+}
+.categories{
+    margin-left: 12px;
+    margin-bottom: 380px;
 }
 .categories h4{
-    margin: 14px 0 0 18px;
     color: #3D3D3D;
     font-family: "Cera Pro Bold ";
     font-size: 18px;
     line-height: 16px; 
 }
 .categories-items{
-    margin-left: 30px;
+    
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
@@ -196,8 +198,6 @@ div.right-main {
 div.nav_bar_foto{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    padding-left: 50px;
 }
 div.up_menu{
     display: flex;
@@ -253,9 +253,11 @@ div.up_right_menu{
 }
 div.foto_content{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 62px;
-    width: 100%;
+    gap: 37px 70px;
+    align-content: center;
+
 }
 div.row_1,div.row_2{
     margin-bottom: 70px;
@@ -269,7 +271,6 @@ div.row_3{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
 }
 div.row_1 h4,div.row_2 h4,div.row_3 h4{
     margin-top: 12px;
@@ -286,10 +287,11 @@ div.row_1 span,div.row_2 span,div.row_3 span{
 
 }
 .foto{
-    width: 250px;
-    height: auto;
     display: flex;
     flex-direction: column;
+}
+.foto img{
+    width: 250px;
 }
 .foto_4{
     width: 224px;
@@ -305,8 +307,8 @@ menu.menu_slide{
     gap: 10px;
 
 }
-.menu_slide .slide{
-    padding: 10px 13px 9px 14px;
+.menu_slide .slide button{
+    padding: 9px 14px;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     color: #3D3D3D;
@@ -314,6 +316,8 @@ menu.menu_slide{
     font-size: 18px;
     line-height: 16px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu_slide .slide.active{
     border-radius: 4px;
@@ -325,10 +329,4 @@ menu.menu_slide{
     font-weight: 700;
     line-height: 16px;
 }
-.menu_slide .slide.img{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
