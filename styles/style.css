@@ -179,6 +179,8 @@ div.filters_categorias {
     display: flex;
     flex-direction: column;
     margin: 14px 0 0 18px;
+    padding-bottom: 377px;
+    background-color: #FBFBFB;
 }
 
 .filters_categorias h4 {
@@ -210,7 +212,6 @@ div.filters_categorias {
 }
 
 div .Super_Sale img {
-    margin-top: 377px;
     width: 310px;
 }
 
@@ -287,6 +288,7 @@ div .flowers_cards {
 .flowers_card img {
     height: 250px;
     margin: 25px 4px;
+    background-color: #FBFBFB;
 }
 
 .flowers_card h4 {
