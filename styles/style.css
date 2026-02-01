@@ -320,7 +320,11 @@ div .flowers_cards {
 }
 
 .menu_slide .slide button {
-    padding: 8px 13px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 18px;
@@ -337,10 +341,4 @@ div .flowers_cards {
     font-family: "Cera Pro Bold";
     font-size: 18px;
     line-height: 16px;
-}
-
-.menu_slide .slide svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
