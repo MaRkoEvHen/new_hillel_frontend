@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inline-block</title>
+  <title>GreenShop</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./fonts/CeraPro-Black.woff2">
 </head>
@@ -52,12 +52,12 @@
         </defs>
       </svg>
       <menu class="menu">
-        <li class="menu-items active">Home</li>
-        <li class="menu-items">Shop</li>
-        <li class="menu-items">Plant Care</li>
-        <li class="menu-items">Blogs</li>
+        <li class="menu_items active">Home</li>
+        <li class="menu_items">Shop</li>
+        <li class="menu_items">Plant Care</li>
+        <li class="menu_items">Blogs</li>
       </menu>
-      <button class="menu-btn">
+      <button class="menu_btn">
         <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.0268 8.559H6.99268" stroke="white" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round" />
@@ -70,107 +70,113 @@
         Login
       </button>
     </header>
-    <main class="main">
-      <div class="HomeWork4">
-        <div class="left-main">
+    <div class="hero">
+      <div class="hero_content">
+        <div class="hero_left">
           <h4>Welcome to GreenShop</h4>
           <h1>Let’s Make a Better <span>Planet</span></h1>
           <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an
             unique Urban Jungle. Order your favorite plants!</p>
-          <button class="main_btn">
+          <button class="hero_btn">
             SHOP NOW
           </button>
         </div>
-        <div class="right-main">
-          <img сlass="first_photo" src="./foto/source_01.png" alt="">
+        <div class="hero_right">
+          <img class="first_photo" src="./foto/source_01.png" alt="">
           <img class="second_photo" src="./foto/01 2.png" alt="">
         </div>
       </div>
+    </div>
+    <main class="main">
       <div class="HomeWork5">
-        
-        <div class="main-categoties">
-          <div class="categoties_list">
+        <div class="left">
+          <div class="filters_categorias">
             <h4>Categories</h4>
-            <menu class="categories">
-              <li class="categories-items active">House Plants</li>
-              <li class="categories-items">Potter Plants</li>
-              <li class="categories-items">Seeds</li>
-              <li class="categories-items">Small Plants</li>
-              <li class="categories-items">Big Plants</li>
-              <li class="categories-items">Succulents</li>
-              <li class="categories-items">Trerrariums</li>
-              <li class="categories-items">Gardening</li>
-              <li class="categories-items">Accessories</li>
-            </menu>
-            
+            <ul>
+              <li class="categories_items active">House Plants</li>
+              <li class="categories_items">Potter Plants</li>
+              <li class="categories_items">Seeds</li>
+              <li class="categories_items">Small Plants</li>
+              <li class="categories_items">Big Plants</li>
+              <li class="categories_items">Succulents</li>
+              <li class="categories_items">Trerrariums</li>
+              <li class="categories_items">Gardening</li>
+              <li class="categories_items">Accessories</li>
+            </ul>
           </div>
-          <img class="Super_Sale" src="./foto/Super Sale Banner.png" alt="Super_Sale_Banner">
+          <div class="Super_Sale">
+            <img class="Super_Sale" src="./foto/Super Sale Banner.png" alt="Super_Sale_Banner">
+          </div>
         </div>
-        <div class="nav_bar_foto">
-          <div class="up_menu">
-            <menu class="up_left_menu">
+        <div class="flowers_catalog">
+          <div class="flowers_menu">
+            <ul>
               <li class="bar_items active">All Plants</li>
               <li class="bar_items">New Arrivals</li>
               <li class="bar_items">Sale</li>
-            </menu>
-            <div class="up_right_menu">
+            </ul>
+            <div class="right">
               <p>Short by:</p>
-              <button>Default sorting</button>
-              <img src="./foto/Arrow - Down 2.svg" alt="Down">
+              <button>Default sorting
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.6667 5.66669L8.00004 10.3334L3.33337 5.66669" stroke="#3D3D3D" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="foto_content">
-            <div class="foto">
+          <div class="flowers_cards">
+            <div class="flowers_card">
               <img src="./foto/foto_1.png" alt="foto_1">
               <h4>Barberton Daisy</h4>
               <span>$119.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_2.jpg" alt="foto_2">
               <h4>Angel Wing Begonia</h4>
               <span>$169.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_3.png" alt="foto_3">
               <h4>African Violet</h4>
               <span>$199.00</span>
             </div>
-            <div class="foto_4">
+            <div class="flowers_card">
               <img src="./foto/foto_4.png" alt="foto_4">
               <h4>Beach Spider Lily</h4>
               <span>$129.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_5.png" alt="foto_5">
               <h4>Blushing Bromeliad</h4>
               <span>$139.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_6.png" alt="foto_6">
               <h4>Aluminum Plant</h4>
               <span>$179.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_7.png" alt="foto_7">
               <h4>Bird's Nest Fern</h4>
               <span>$99.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_8.jpg" alt="foto_8">
               <h4>Broadleaf Lady Palm</h4>
               <span>$59.00</span>
             </div>
-            <div class="foto">
+            <div class="flowers_card">
               <img src="./foto/foto_9.png" alt="foto_9">
               <h4>Chinese Evergreen</h4>
               <span>$39.00</span>
             </div>
           </div>
-          <menu class="menu_slide">
+          <ul class="menu_slide">
             <li class="slide active">
               <button>
                 1
-              </button> 
+              </button>
             </li>
             <li class="slide">
               <button>
@@ -189,10 +195,13 @@
             </li>
             <li class="slide img">
               <button>
-                <img src="./foto/Arrow - Right 2.svg" alt="">
-              </button>              
+                <svg width="10" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.375 3.75C6.375 3.75 11.625 6.858 11.625 9C11.625 11.1413 6.375 14.25 6.375 14.25"
+                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
             </li>
-          </menu>
+          </ul>
         </div>
       </div>
     </main>
