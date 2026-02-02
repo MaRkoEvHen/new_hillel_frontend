@@ -195,15 +195,11 @@ div.filters_categorias {
     display: flex;
     flex-direction: column;
     gap: 3px;
-}
-
-.filters_categorias .categories_items {
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
     line-height: 40px;
 }
-
 .filters_categorias .categories_items.active {
     color: #46A358;
     font-family: "Cera Pro Bold";
@@ -308,7 +304,7 @@ div .flowers_cards {
 }
 
 .flowers_catalog .menu_slide {
-    padding-top: 90px;
+    margin-top: 90px;
     display: flex;
     align-items: flex-start;
     justify-content: end;
