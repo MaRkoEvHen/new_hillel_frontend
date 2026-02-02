@@ -181,6 +181,10 @@ div.filters_categorias {
     margin: 14px 0 0 18px;
     padding-bottom: 377px;
     background-color: #FBFBFB;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+    line-height: 40px;
 }
 
 .filters_categorias h4 {
@@ -195,10 +199,6 @@ div.filters_categorias {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    color: #3D3D3D;
-    font-family: "Cera Pro Regular";
-    font-size: 15px;
-    line-height: 40px;
 }
 .filters_categorias .categories_items.active {
     color: #46A358;
