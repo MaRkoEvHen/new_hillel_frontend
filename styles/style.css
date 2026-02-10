@@ -379,13 +379,13 @@ div .HomeWork6 {
 .about_flowers .about_flower1 img {
     width: 287px;
     margin-top: -50px;
-    margin-bottom: -1px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 2;
 }
 
 .about_flower1 .about_text1 {
-    padding: 0 30px 35px 0;
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -438,13 +438,13 @@ div .HomeWork6 {
 .about_flower2 img {
     width: 287px;
     margin-top: -50px;
-    margin-bottom: -1px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 2;
 }
 
 .about_flower2 .about_text2 {
-    padding: 0 30px 35px 0;
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -512,7 +512,6 @@ div .HomeWork6 {
 .blog .blog_post {
     margin-top: 35px;
     display: flex;
-    /* justify-content: space-between; */
     gap: 30px;
 }
 
