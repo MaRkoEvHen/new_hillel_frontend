@@ -306,13 +306,12 @@ div .flowers_cards {
     position: absolute;
     left: 0;
     top: 15px;
-}
-.sale p{
     color: #FFF;
     font-family: "Cera Pro Medium";
     font-size: 16px;
     line-height: 16px; 
 }
+
 .img_card .hover_action{
     position: absolute;
     bottom: -20px;
