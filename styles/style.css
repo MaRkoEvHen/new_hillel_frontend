@@ -59,6 +59,8 @@ menu.menu {
 }
 
 li.menu_items {
+    position: relative;
+    cursor: pointer;
     color: #3D3D3D;
     font-family: "Cera Pro Medium", sans-serif;
     font-size: 16px;
@@ -66,9 +68,92 @@ li.menu_items {
     border-bottom: 3px solid transparent;
 }
 
-li.menu_items.active {
+li.menu_items:hover{
     font-family: "Cera Pro Bold", sans-serif;
     border-bottom: 3px solid #46A358;
+}
+.menu_items .dropdown{
+    position: absolute;
+    top: 120%;
+    left: -50px;
+    background-color: #EDF6EE;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 16px;
+    white-space: nowrap;
+    line-height: normal;
+    z-index: 2;
+    
+}
+.dropdown li{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:90px;
+    padding: 10px 15px;
+}
+.dropdown li .light{
+    display: none;
+}
+.dropdown li .black{
+    display: block;
+}
+.dropdown li:hover{
+    background-color:#1A712A;
+    color: #FFF;
+}
+.dropdown li:hover .black{
+    display: none;
+}
+.dropdown li:hover .light{
+    display: block;
+}
+.dropdown li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: -1;
+}
+li.menu_items:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown .sublist{
+    position: absolute;
+    z-index: 5;
+    left: 102%;
+    top: -300%;
+    background-color: #EDF6EE;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown .sublist li{
+    display: flex;
+    align-items: center;
+}
+.dropdown .sublist li button{
+    background: none;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 16px;
+    line-height: normal;
+    cursor: pointer;
+}
+.dropdown li:hover > .sublist{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown .sublist li:hover button{
+    color: #FFF;
 }
 
 button.menu_btn {
@@ -314,7 +399,7 @@ div .flowers_cards {
 
 .img_card .hover_action{
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -326,10 +411,18 @@ div .flowers_cards {
 }
 .hover_action button{
     border-radius: 4px;
-    background-color: #FFFFFF;
-    margin: 7px 7px;
+    background: none;
+    padding: 15px 15px;
     display: flex;
     gap: 25px;
+}
+
+.hover_action button svg path{
+    fill: #3D3D3D;
+}
+
+.hover_action button:hover svg path{
+    fill: #46A358;
 }
 .img_card:hover .hover_action{
     opacity: 1;
