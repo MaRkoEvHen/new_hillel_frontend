@@ -282,10 +282,63 @@ div .flowers_cards {
     flex-direction: column;
 }
 
-.flowers_card img {
-    height: 250px;
-    margin: 25px 4px;
+.flowers_card .img_card{
+    padding: 25px 4px;
+    border-top: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
     background-color: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.flowers_card .img_card img {
+    height: 250px;
+
+}
+.flowers_card .sale{
+    padding: 6px 8px;
+    background-color: #46A358;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.sale p{
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 16px;
+    line-height: 16px; 
+}
+.img_card .hover_action{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+
+}
+.hover_action button{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin: 7px 7px;
+    display: flex;
+    gap: 25px;
+}
+.img_card:hover .hover_action{
+    opacity: 1;
+    visibility: visible;
+}
+
+.img_card:hover{
+ border-top: 1px solid #46A358;
 }
 
 .flowers_card h4 {
@@ -296,10 +349,21 @@ div .flowers_cards {
     line-height: 16px;
 }
 
-.flowers_card span {
+.flowers_card  span {
     margin-top: 6px;
     color: #46A358;
     font-family: "Cera Pro Bold";
+    font-size: 18px;
+    line-height: 16px;
+}
+.flowers_card .sale_prise{
+    display: flex;
+    gap: 15px;
+}
+.flowers_card .sale_prise .prise_to{
+    text-decoration: line-through;
+    color: #A5A5A5;
+    font-family: "Cera Pro Regular";
     font-size: 18px;
     line-height: 16px;
 }
