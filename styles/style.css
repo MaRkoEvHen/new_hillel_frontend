@@ -68,11 +68,12 @@ li.menu_items {
     border-bottom: 3px solid transparent;
 }
 
-li.menu_items:hover{
+li.menu_items:hover {
     font-family: "Cera Pro Bold", sans-serif;
     border-bottom: 3px solid #46A358;
 }
-.menu_items .dropdown{
+
+.menu_items .dropdown {
     position: absolute;
     top: 120%;
     left: -50px;
@@ -87,33 +88,40 @@ li.menu_items:hover{
     white-space: nowrap;
     line-height: normal;
     z-index: 2;
-    
+
 }
-.dropdown li{
+
+.dropdown li {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:90px;
+    gap: 90px;
     padding: 10px 15px;
 }
-.dropdown li .light{
+
+.dropdown li .light {
     display: none;
 }
-.dropdown li .black{
+
+.dropdown li .black {
     display: block;
 }
-.dropdown li:hover{
-    background-color:#1A712A;
+
+.dropdown li:hover {
+    background-color: #1A712A;
     color: #FFF;
 }
-.dropdown li:hover .black{
+
+.dropdown li:hover .black {
     display: none;
 }
-.dropdown li:hover .light{
+
+.dropdown li:hover .light {
     display: block;
 }
-.dropdown li::after{
+
+.dropdown li::after {
     content: "";
     position: absolute;
     top: 0;
@@ -123,11 +131,13 @@ li.menu_items:hover{
     background: transparent;
     z-index: -1;
 }
-li.menu_items:hover .dropdown{
+
+li.menu_items:hover .dropdown {
     opacity: 1;
     visibility: visible;
 }
-.dropdown .sublist{
+
+.dropdown .sublist {
     position: absolute;
     z-index: 5;
     left: 102%;
@@ -136,11 +146,13 @@ li.menu_items:hover .dropdown{
     opacity: 0;
     visibility: hidden;
 }
-.dropdown .sublist li{
+
+.dropdown .sublist li {
     display: flex;
     align-items: center;
 }
-.dropdown .sublist li button{
+
+.dropdown .sublist li button {
     background: none;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
@@ -148,11 +160,13 @@ li.menu_items:hover .dropdown{
     line-height: normal;
     cursor: pointer;
 }
-.dropdown li:hover > .sublist{
+
+.dropdown li:hover>.sublist {
     opacity: 1;
     visibility: visible;
 }
-.dropdown .sublist li:hover button{
+
+.dropdown .sublist li:hover button {
     color: #FFF;
 }
 
@@ -367,7 +381,7 @@ div .flowers_cards {
     flex-direction: column;
 }
 
-.flowers_card .img_card{
+.flowers_card .img_card {
     padding: 25px 4px;
     border-top: 1px solid transparent;
     transition: border-color 0.3s ease;
@@ -378,14 +392,15 @@ div .flowers_cards {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
 .flowers_card .img_card img {
     height: 250px;
 
 }
-.flowers_card .sale{
+
+.flowers_card .sale {
     padding: 6px 8px;
     background-color: #46A358;
     position: absolute;
@@ -394,10 +409,10 @@ div .flowers_cards {
     color: #FFF;
     font-family: "Cera Pro Medium";
     font-size: 16px;
-    line-height: 16px; 
+    line-height: 16px;
 }
 
-.img_card .hover_action{
+.img_card .hover_action {
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -409,7 +424,8 @@ div .flowers_cards {
     transition: opacity 0.3s ease;
 
 }
-.hover_action button{
+
+.hover_action button {
     border-radius: 4px;
     background: none;
     padding: 15px 15px;
@@ -417,20 +433,21 @@ div .flowers_cards {
     gap: 25px;
 }
 
-.hover_action button svg path{
+.hover_action button svg path {
     fill: #3D3D3D;
 }
 
-.hover_action button:hover svg path{
+.hover_action button:hover svg path {
     fill: #46A358;
 }
-.img_card:hover .hover_action{
+
+.img_card:hover .hover_action {
     opacity: 1;
     visibility: visible;
 }
 
-.img_card:hover{
- border-top: 1px solid #46A358;
+.img_card:hover {
+    border-top: 1px solid #46A358;
 }
 
 .flowers_card h4 {
@@ -441,18 +458,20 @@ div .flowers_cards {
     line-height: 16px;
 }
 
-.flowers_card  span {
+.flowers_card span {
     margin-top: 6px;
     color: #46A358;
     font-family: "Cera Pro Bold";
     font-size: 18px;
     line-height: 16px;
 }
-.flowers_card .sale_prise{
+
+.flowers_card .sale_prise {
     display: flex;
     gap: 15px;
 }
-.flowers_card .sale_prise .prise_to{
+
+.flowers_card .sale_prise .prise_to {
     text-decoration: line-through;
     color: #A5A5A5;
     font-family: "Cera Pro Regular";
@@ -858,4 +877,158 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 16px;
+}
+
+.HomeWork9 {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.HomeWork9 .foot_up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFBFB;
+}
+
+.foot_up .node {
+    display: flex;
+    padding: 0 30px 0 25px;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid rgba(70, 163, 88, 0.10);
+}
+
+.node h3 {
+    margin-top: 15px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 17px;
+    line-height: 16px;
+}
+
+.node p {
+    margin-top: 10px;
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.foot_up .node_ {
+    border: none;
+    display: flex;
+    padding: 0 60px 0 25px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.node_ h3 {
+    margin-top: 15px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 17px;
+    line-height: 16px;
+}
+
+.node_ p {
+    margin-top: 10px;
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.foot_up .join {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.join h2 {
+    margin-top: 35px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.join .email_input {
+    margin-top: 25px;
+    display: flex;
+}
+
+.email_input input {
+    padding: 12px 86px 12px 10px;
+    color: #ACACAC;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.email_input button {
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 0 6px 6px 0;
+    background-color: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.join p {
+    margin-top: 15px;
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.foot_midle {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+}
+
+.foot_midle .geo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.geo p {
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.foot_midle .email {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.email p {
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.foot_midle .number {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.number p {
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px;
 }
