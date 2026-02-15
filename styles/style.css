@@ -140,14 +140,15 @@ li.menu_items:hover .dropdown {
 .dropdown .sublist {
     position: absolute;
     z-index: 5;
-    left: 102%;
+    padding-left: 10px;
+    left: 98%;
     top: -300%;
-    background-color: #EDF6EE;
     opacity: 0;
     visibility: hidden;
 }
 
 .dropdown .sublist li {
+    background-color: #EDF6EE;
     display: flex;
     align-items: center;
 }
@@ -1058,6 +1059,10 @@ div .HomeWork6 {
     font-family: "Cera Pro Regular";
     font-size: 14px;
     line-height: 30px;
+}
+.list ul li
+{
+    margin-top: 9px;
 }
 
 .social {
