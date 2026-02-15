@@ -152,6 +152,9 @@ li.menu_items:hover .dropdown {
     display: flex;
     align-items: center;
 }
+.dropdown .sublist li:hover {
+    background-color: #1A712A;
+}
 
 .dropdown .sublist li button {
     background: none;
