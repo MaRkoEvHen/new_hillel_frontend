@@ -34,7 +34,7 @@ body{
     padding: 0;
 }
 .wrapper{
-    height: 60vh;
+    height: 100vh;
     background-color:rgba(25, 180, 95, 0.5);
     display: flex;
     flex-direction: column;
