@@ -1,3 +1,5 @@
+@import "../node_modules/nouislider/dist/nouislider.css";
+
 @font-face {
     font-family: 'Cera Pro Regular';
     src: url('../fonts/CeraPro-Regular.eot');
@@ -50,6 +52,7 @@ header.header {
     justify-content: space-between;
     align-items: start;
     margin-bottom: 12px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.50);
 
 }
 
@@ -152,6 +155,7 @@ li.menu_items:hover .dropdown {
     display: flex;
     align-items: center;
 }
+
 .dropdown .sublist li:hover {
     background-color: #1A712A;
 }
@@ -173,8 +177,20 @@ li.menu_items:hover .dropdown {
 .dropdown .sublist li:hover button {
     color: #FFF;
 }
-
-button.menu_btn {
+.list_btn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.list_btn .search_btn{
+    background: none;
+    cursor: pointer;
+}
+.list_btn .shop_btn{
+    background: none;
+    cursor: pointer;
+}
+.list_btn .menu_btn {
     padding: 8px 17px;
     border-radius: 6px;
     background: #46A358;
@@ -183,12 +199,24 @@ button.menu_btn {
     gap: 4px;
     color: #FFFFFF;
     font-family: 'Cera Pro Medium';
+    cursor: pointer;
+}
+.menu_btn a{
+    background: #46A358;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Cera Pro Medium';
+}
+.menu_btn a:visited{
+    color: #FFFFFF;
 }
 
 .hero .hero_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
 .hero.hero_content .hero_left {
@@ -241,6 +269,7 @@ button.menu_btn {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .hero_content .hero_right {
@@ -270,6 +299,7 @@ main.main {
 
 div.HomeWork5 {
     display: flex;
+    justify-content: flex-start;
     gap: 50px;
 }
 
@@ -281,8 +311,7 @@ div.HomeWork5 {
 div.filters_categorias {
     display: flex;
     flex-direction: column;
-    margin: 14px 0 0 18px;
-    padding-bottom: 377px;
+    padding: 14px 18px 20px 18px;
     background-color: #FBFBFB;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
@@ -298,18 +327,79 @@ div.filters_categorias {
 }
 
 .filters_categorias ul {
-    margin: 7px 0 0 12px;
+    padding: 7px 12px 20px 12px;
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.filters_categorias .categories_items.active {
+.categories_items .category_lable {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    cursor: pointer;
+    color: #3D3D3D;
+}
+
+.category_input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.category_input:checked~.category_text,
+.category_input:checked~.category_count {
     color: #46A358;
-    font-family: "Cera Pro Bold";
+    font-family: "Cera Pro Medium";
     font-size: 15px;
     line-height: 40px;
+
 }
+
+.sidebar_filter h3 {
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.sidebar_filter .price_slider {
+    margin: 20px 60px 15px 10px;
+}
+
+.sidebar_filter p {
+    margin: 0 10px 0 10px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.sidebar_filter .filter_btn {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 20px 10px 50px 10px;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Bold";
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.size .category_lable {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    cursor: pointer;
+    color: #3D3D3D;
+}
+
 
 div .Super_Sale img {
     width: 310px;
@@ -339,9 +429,11 @@ div.flowers_menu {
     font-size: 15px;
     line-height: 16px;
     padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.flowers_menu ul .bar_items.active {
+.flowers_menu ul .bar_items:hover{
     color: #46A358;
     font-family: "Cera Pro Bold";
     font-size: 15px;
@@ -511,7 +603,7 @@ div .flowers_cards {
     border: 1px solid #E5E5E5;
 }
 
-.menu_slide .slide.active button {
+.menu_slide .slide button:hover {
     border-radius: 4px;
     background: #46A358;
     color: #FFF;
@@ -532,6 +624,10 @@ div .flowers_cards {
     background: #FFFFFF;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
+}
+.menu_slide .slide_btn button:hover {
+    border-radius: 4px;
+    background: #46A358;
 }
 
 div .HomeWork6 {
@@ -603,6 +699,7 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .HomeWork6 .about_flowers .about_flower2 {
@@ -662,6 +759,7 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .HomeWork6 .blog {
@@ -740,6 +838,7 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
 }
 
 .blog_post .blog_post2 {
@@ -785,6 +884,7 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
 }
 
 .blog_post .blog_post3 {
@@ -833,6 +933,7 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
 }
 
 .blog_post .blog_post4 {
@@ -881,6 +982,7 @@ div .HomeWork6 {
     font-family: "Cera Pro Medium";
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
 }
 
 .HomeWork9 {
@@ -1063,8 +1165,8 @@ div .HomeWork6 {
     font-size: 14px;
     line-height: 30px;
 }
-.list ul li
-{
+
+.list ul li {
     margin-top: 9px;
 }
 
@@ -1119,4 +1221,48 @@ div .HomeWork6 {
     font-family: "Cera Pro Regular";
     font-size: 14px;
     line-height: 30px;
+}
+
+.noUi-connect {
+    background: #46A358 !important;
+}
+
+
+.noUi-target {
+    background: rgba(70, 163, 88, 0.20) !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 4px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.noUi-handle {
+    width: 18px !important;
+    height: 18px !important;
+    right: -9px !important;
+    top: -8px !important;
+    border-radius: 50% !important;
+    background: #46A358 !important;
+    border: 3px solid white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer !important;
+}
+
+
+.noUi-handle::before,
+.noUi-handle::after {
+    display: none !important;
+}
+
+
+.price-label {
+    font-size: 14px;
+    color: #3D3D3D;
+}
+
+.price-value {
+    color: #46A358;
+    font-weight: bold;
 }

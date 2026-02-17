@@ -1,0 +1,181 @@
+
+@font-face {
+    font-family: 'Cera Pro Regular';
+    src: url('../CeraPro/CeraPro-Regular.eot');
+    src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+        url('../CeraPro/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../CeraPro/CeraPro-Regular.woff2') format('woff2'),
+        url('../CeraPro/CeraPro-Regular.woff') format('woff'),
+        url('../CeraPro/CeraPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cera Pro Medium';
+    src: url('../CeraPro/CeraPro-Medium.eot');
+    src: local('Cera Pro Medium'), local('CeraPro-Medium'),
+        url('../CeraPro/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../CeraPro/CeraPro-Medium.woff2') format('woff2'),
+        url('../CeraPro/CeraPro-Medium.woff') format('woff'),
+        url('../CeraPro/CeraPro-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cera Pro Bold';
+    src: url('../CeraPro/CeraPro-Bold.eot');
+    src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+        url('../CeraPro/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../CeraPro/CeraPro-Black.woff2') format('woff2'),
+        url('../CeraPro/CeraPro-Bold.woff') format('woff'),
+        url('../CeraPro/CeraPro-Bold.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 60vh;
+    background-color:rgba(25, 180, 95, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.forms{
+    background-color: #FFF;
+    border: 2px solid #3D3D3D;
+}
+.cancel{
+    display: flex;
+    justify-content: end;
+}
+.cancel svg{
+    padding: 13px 13px 0 0;
+}
+.log_reg{
+    padding: 21px 172px 0;
+    display: flex;
+}
+
+.login{
+    color: #3D3D3D;
+    font-family: "Cera Pro Medium";
+    font-size: 20px;
+    line-height: 16px;
+}
+.divider{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 16px;
+}
+.registration{
+    color: #46A358;
+    font-family: "Cera Pro Medium";
+    font-size: 20px;
+    line-height: 16px;
+}
+.subtitle{ 
+    padding: 40px 100px 0 ;
+}
+.subtitle p{
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 13px;
+    line-height: 16px;
+}
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 0 ;
+}
+.auth-form input{
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    margin: 16px 0 0 ;
+    padding: 12px 80px 12px 14px;
+}
+.pass{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    margin: 16px 0 0 ;
+
+}
+.pass svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+}
+.pass input{
+    border: none;
+    display: flex;
+    margin: 0;
+    
+}
+.reg_btn{
+    display: flex;
+    padding: 41px 100px 0;
+    
+}
+.reg_btn button{
+    padding: 15px 120px;
+    border-radius: 5px;
+    background: #46A358;
+   color: #FFF;
+    font-family: "Cera Pro Bold";
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px; 
+    margin: 36px 0 0;     
+}
+
+.line {
+    width: 97px;
+    height: 2px;
+    background: #EAEAEA;
+}
+
+.separator-text {
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 13px;
+    line-height: 16px;
+}
+.auth-messanger{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 100px;
+    margin-top: 27px;
+}
+.auth-messanger button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    margin: 0 0 15px;
+    cursor: pointer;
+    color: #727272;
+    text-align: center;
+    font-family: "Cera Pro Regular";
+    font-size: 13px;
+    line-height: 16px; 
+}
+.line_end{
+    margin-top: 40px;
+    background-color: #46A358;
+    padding-top: 10px;
+}
