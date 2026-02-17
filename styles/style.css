@@ -1302,10 +1302,6 @@ div .HomeWork6 {
         transform: rotate(360deg);
     }
 }
-.preloader-hidden {
-    opacity: 0;
-    visibility: hidden;
-}
 .preloader-active {
     opacity: 1 !important;
     visibility: visible !important;
