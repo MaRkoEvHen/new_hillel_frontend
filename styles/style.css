@@ -178,19 +178,23 @@ li.menu_items:hover .dropdown {
 .dropdown .sublist li:hover button {
     color: #FFF;
 }
-.list_btn{
+
+.list_btn {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.list_btn .search_btn{
+
+.list_btn .search_btn {
     background: none;
     cursor: pointer;
 }
-.list_btn .shop_btn{
+
+.list_btn .shop_btn {
     background: none;
     cursor: pointer;
 }
+
 .list_btn .menu_btn {
     padding: 8px 17px;
     border-radius: 6px;
@@ -202,14 +206,16 @@ li.menu_items:hover .dropdown {
     font-family: 'Cera Pro Medium';
     cursor: pointer;
 }
-.menu_btn a{
+
+.menu_btn a {
     background: #46A358;
     display: flex;
     align-items: center;
     color: #FFFFFF;
     font-family: 'Cera Pro Medium';
 }
-.menu_btn a:visited{
+
+.menu_btn a:visited {
     color: #FFFFFF;
 }
 
@@ -434,7 +440,7 @@ div.flowers_menu {
     transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.flowers_menu ul .bar_items:hover{
+.flowers_menu ul .bar_items:hover {
     color: #46A358;
     font-family: "Cera Pro Bold";
     font-size: 15px;
@@ -626,6 +632,7 @@ div .flowers_cards {
     border-radius: 4px;
     border: 1px solid #E5E5E5;
 }
+
 .menu_slide .slide_btn button:hover {
     border-radius: 4px;
     background: #46A358;
@@ -1266,4 +1273,40 @@ div .HomeWork6 {
 .price-value {
     color: #46A358;
     font-weight: bold;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.flower-group {
+    transform-origin: center;
+    animation: rotateFlower 2s linear infinite;
+}
+@keyframes rotateFlower {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.preloader-active {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
