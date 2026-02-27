@@ -1422,7 +1422,7 @@ div .HomeWork6 {
     }
 
     .flowers_card .img_card {
-        width: 150px;
+        width: 200px;
     }
 
     .flowers_card h4 {
@@ -1539,7 +1539,7 @@ div .HomeWork6 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-color:#FBFBFB;
+        background-color: #FBFBFB;
     }
 
     .blog_post1 img,
@@ -1582,56 +1582,75 @@ div .HomeWork6 {
     .HomeWork9 {
         margin-top: 80px;
     }
-    .foot_up .node{
+
+    .foot_up .node {
         padding: 0 20px 0 15px;
     }
-    .foot_up .node_{
+
+    .foot_up .node_ {
         padding: 0 45px 0 15px;
     }
-    .node h3, .node_ h3{
+
+    .node h3,
+    .node_ h3 {
         font-size: 13px;
         margin-top: 13px;
     }
-    .node p , .node_ p{
+
+    .node p,
+    .node_ p {
         font-size: 10px;
         line-height: 18px;
     }
-    .foot_up .join h2{
+
+    .foot_up .join h2 {
         font-size: 16px;
     }
-    .email_input input{
+
+    .email_input input {
         padding: 8px 76px 8px 10px;
-        font-size:12px;
+        font-size: 12px;
     }
-    .email_input button{
+
+    .email_input button {
         padding: 8px 16px;
     }
-    .join p{
+
+    .join p {
         margin-top: 10px;
         font-size: 11px;
         line-height: 20px;
     }
-    .foot_midle{
+
+    .foot_midle {
         padding: 20px 0;
     }
-    .foot_midle .geo p, .email p, .number p{
+
+    .foot_midle .geo p,
+    .email p,
+    .number p {
         font-size: 12px;
     }
-    .foot_end .list{
+
+    .foot_end .list {
         margin: 20px 0 20px;
     }
-    .foot_end .list h3{
+
+    .foot_end .list h3 {
         font-size: 15px;
     }
-    .foot_end .list ul{
+
+    .foot_end .list ul {
         font-size: 12px;
         line-height: 26px;
     }
-    .social h2{
-       font-size: 16px;
-       line-height: 14px; 
+
+    .social h2 {
+        font-size: 16px;
+        line-height: 14px;
     }
-    .end p{
+
+    .end p {
         font-size: 12px;
     }
 }
@@ -1640,31 +1659,38 @@ div .HomeWork6 {
     div.container {
         padding: 15px 3%;
     }
+
     header.header {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
+
     menu.menu {
         order: 3;
         width: 100%;
         justify-content: center;
         gap: 20px;
     }
+
     .hero .hero_content {
         flex-direction: column;
         text-align: center;
     }
+
     .hero.hero_content .hero_left {
         align-items: center;
         padding: 30px 0;
     }
-    .hero_content .hero_right{
+
+    .hero_content .hero_right {
         right: 30%
     }
+
     .hero_right .first_photo {
         max-width: 280px;
     }
+
     div.HomeWork5 {
         flex-direction: column;
         gap: 30px;
@@ -1686,22 +1712,161 @@ div .HomeWork6 {
     .flowers_card {
         flex: 0 0 45%;
     }
+
     .HomeWork6 .about_flowers {
         flex-direction: column;
     }
-    .about_flower1, .about_flower2 {
+
+    .about_flower1,
+    .about_flower2 {
         width: 100%;
         margin-top: 20px !important;
     }
+
     .blog .blog_post {
         flex-direction: column;
         align-items: center;
     }
-    .blog_post > div[class^="blog_post"] {
+
+    .blog_post>div[class^="blog_post"] {
         flex: 1 1 100%;
         width: 100%;
         max-width: 400px;
     }
 }
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+    div.container {
+        padding: 10px 15px;
+    }
+
+    header.header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    menu.menu {
+        display: none;
+    }
+
+    .hero .hero_content {
+        flex-direction: column;
+        padding: 30px 10px;
+        text-align: center;
+    }
+
+    .hero.hero_content .hero_left {
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero_left h1,
+    .hero_left h1 span {
+        font-size: 22px;
+    }
+
+    .hero_left p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .hero_content .hero_right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        right: auto;
+    }
+
+    .hero_right .first_photo {
+        width: 90%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .left,
+    .flowers_catalog {
+        width: 100%;
+    }
+
+    div.filters_categorias {
+        line-height: 30px;
+        padding: 15px;
+    }
+
+    div .flowers_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .flowers_card {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .flowers_card .img_card {
+        width: 100%;
+        height: auto;
+    }
+
+    .flowers_card .img_card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about_flowers .about_flower1 img,
+    .about_flowers .about_flower2 img {
+        width: 100px;
+    }
+
+    .about_text1,
+    .about_text2 {
+        text-align: center;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .foot_up {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .foot_up .node,
+    .foot_up .node_ {
+        border: none;
+        padding: 0 10px;
+    }
+
+    .join .email_input {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .email_input input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    .email_input button {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .foot_midle {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .foot_end {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
