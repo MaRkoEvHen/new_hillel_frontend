@@ -1290,19 +1290,352 @@ div .HomeWork6 {
     opacity: 0;
     visibility: hidden;
 }
+
 .flower-group {
     transform-origin: center;
     animation: rotateFlower 2s linear infinite;
 }
+
 @keyframes rotateFlower {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
+
 .preloader-active {
     opacity: 1 !important;
     visibility: visible !important;
 }
+
+@media screen and (max-width: 1024px) {
+
+    menu.menu {
+        gap: clamp(15px, 3vw, 30px)
+    }
+
+    li.menu_items {
+        font-size: 14px;
+        padding: 8 0 20px;
+    }
+
+    .list_btn {
+        gap: clamp(10px, 2vw, 20px)
+    }
+
+    .list_btn .menu_btn {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .hero .hero_content {
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .hero.hero_content .hero_left {
+        padding: 40px 0;
+    }
+
+    .hero_left h1,
+    .hero_left h1 span {
+        font-size: 30px;
+    }
+
+    .hero_left p {
+        font-size: 14px;
+    }
+
+    .hero_content .hero_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_right .first_photo {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .hero_right .second_photo {
+        width: 30%;
+        left: 5%;
+        bottom: 15px;
+    }
+
+    .hero_left .hero_btn {
+        margin-top: 20px;
+    }
+
+    .filters_categorias h4 {
+        font-size: 15px;
+    }
+
+    .filters_categorias ul {
+        font-size: 13px;
+        padding-bottom: 5px;
+        line-height: 40px;
+    }
+
+    .sidebar_filter h3 {
+        font-size: 15px;
+    }
+
+    .price_slider p,
+    span {
+        font-size: 13px;
+    }
+
+    .sidebar_filter .filter_btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    div .Super_Sale img {
+        width: 250px;
+    }
+
+    .flowers_menu ul .bar_items {
+        font-size: 13px;
+        gap: 25px;
+    }
+
+    .flowers_menu ul .bar_items:hover {
+        font-size: 13px;
+    }
+
+    .right p {
+        font-size: 13px;
+    }
+
+    .right button,
+    svg {
+        font-size: 13px;
+    }
+
+    div .flowers_cards {
+        gap: 30px 15px;
+    }
+
+    .flowers_card .img_card {
+        width: 150px;
+    }
+
+    .flowers_card h4 {
+        font-size: 13px;
+    }
+
+    .flowers_card span {
+        font-size: 15px;
+    }
+
+    .flowers_card .sale {
+        font-size: 13px;
+    }
+
+    .img_card .hover_action {
+        gap: 3px;
+        bottom: -30px;
+    }
+
+    .hover_action button {
+        padding: 10px;
+    }
+
+    .flowers_catalog .menu_slide {
+        margin-top: 30px;
+        gap: 8px;
+    }
+
+    .menu_slide .slide button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .menu_slide .slide_btn button {
+        padding: 7px;
+    }
+
+    .flowers_card .sale_prise .prise_to {
+        font-size: 14px;
+    }
+
+    div .HomeWork6 {
+        margin-top: 60px;
+    }
+
+    .HomeWork6 .about_flowers {
+        gap: 20px;
+    }
+
+    .HomeWork6 .about_flowers .about_flower1 {
+        margin-top: 40px;
+    }
+
+    .about_flowers .about_flower1 img {
+        width: 220px;
+    }
+
+    .about_flowers .about_text1 h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about_flowers .about_text1 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .about_flowers .about_text1 button {
+        margin-top: 15px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .HomeWork6 .about_flowers .about_flower2 {
+        margin-top: 40px;
+    }
+
+    .about_flowers .about_flower2 img {
+        width: 230px;
+    }
+
+    .about_flowers .about_text2 h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about_flowers .about_text2 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .about_flowers .about_text2 button {
+        margin-top: 15px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .HomeWork6 .blog {
+        margin-top: 80px;
+    }
+
+    .blog h2 {
+        font-size: 24px;
+        line-height: 14px;
+    }
+
+    .blog p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .blog .blog_post {
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color:#FBFBFB;
+    }
+
+    .blog_post1 img,
+    .blog_post2 img,
+    .blog_post3 img,
+    .blog_post4 img {
+        width: 260px;
+    }
+
+    .blog_post1 span,
+    .blog_post2 span,
+    .blog_post3 span,
+    .blog_post4 span {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .blog_post1 h4,
+    .blog_post2 h4,
+    .blog_post3 h4,
+    .blog_post4 h4 {
+        font-size: 16px;
+    }
+
+    .blog_post1 p,
+    .blog_post2 p,
+    .blog_post3 p,
+    .blog_post4 p {
+        font-size: 12px;
+    }
+
+    .blog_post1 button,
+    .blog_post2 button,
+    .blog_post3 button,
+    .blog_post4 button {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .HomeWork9 {
+        margin-top: 80px;
+    }
+    .foot_up .node{
+        padding: 0 20px 0 15px;
+    }
+    .foot_up .node_{
+        padding: 0 45px 0 15px;
+    }
+    .node h3, .node_ h3{
+        font-size: 13px;
+        margin-top: 13px;
+    }
+    .node p , .node_ p{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .foot_up .join h2{
+        font-size: 16px;
+    }
+    .email_input input{
+        padding: 8px 76px 8px 10px;
+        font-size:12px;
+    }
+    .email_input button{
+        padding: 8px 16px;
+    }
+    .join p{
+        margin-top: 10px;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .foot_midle{
+        padding: 20px 0;
+    }
+    .foot_midle .geo p, .email p, .number p{
+        font-size: 12px;
+    }
+    .foot_end .list{
+        margin: 20px 0 20px;
+    }
+    .foot_end .list h3{
+        font-size: 15px;
+    }
+    .foot_end .list ul{
+        font-size: 12px;
+        line-height: 26px;
+    }
+    .social h2{
+       font-size: 16px;
+       line-height: 14px; 
+    }
+    .end p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 320px) {}
